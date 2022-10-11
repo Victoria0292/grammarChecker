@@ -23,3 +23,8 @@ storyWords = storyWords.filter((word) => {
   storyWords = storyWords.map((word) => {
     return word === misspelledWord ? 'beautiful' : word;
   });
+
+  //findIndex() will find the index of the variable badWord
+  let badWordIndex = storyWords.findIndex((word) => {
+    return word === badWord;
+  });
