@@ -14,7 +14,12 @@ storyWords.forEach((word) => {
 });
 console.log(count);
 
-//the filter method will filter out the word "literally"
+//the filter() method will filter out the word "literally"
 storyWords = storyWords.filter((word) => {
     return word != unnecessaryWord
+  });
+
+  //using the map() method to correct misspelled words
+  storyWords = storyWords.map((word) => {
+    return word === misspelledWord ? 'beautiful' : word;
   });
