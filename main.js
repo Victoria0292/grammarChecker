@@ -13,3 +13,8 @@ storyWords.forEach((word) => {
   count++;
 });
 console.log(count);
+
+//the filter method will filter out the word "literally"
+storyWords = storyWords.filter((word) => {
+    return word != unnecessaryWord
+  });
