@@ -35,4 +35,15 @@ console.log(badWordIndex);
 //change the word at index 78 to a "really"
 storyWords[78] = "really";
 
+//checks if every word is less than 10 characters
+let lengthCheck = storyWords.every((word) => {
+    return word.length < 10;
+  });
+  console.log(lengthCheck);
+  
+  storyWords.forEach((word) => {
+    word.length > 10 && console.log(word);
+  });
+
+
 console.log(storyWords.join(" "));
